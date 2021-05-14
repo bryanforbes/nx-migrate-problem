@@ -24,7 +24,9 @@
     "workspace-generator": "nx workspace-generator",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "postinstall": "ngcc --properties es2015 browser module main"
+    "postinstall": "ngcc --properties es2015 browser module main",
+    "tao-yarn-add": "rm -rf ../tao-yarn-add-test && mkdir ../tao-yarn-add-test && cd ../tao-yarn-add-test && yarn add @nrwl/workspace@latest",
+    "tao-yarn-add-fixed": "rm -rf ../tao-yarn-add-fixed-test && mkdir ../tao-yarn-add-fixed-test && cd ../tao-yarn-add-fixed-test && echo \"{}\" | tee package.json && yarn add @nrwl/workspace@latest"
   },
   "private": true,
   "dependencies": {
